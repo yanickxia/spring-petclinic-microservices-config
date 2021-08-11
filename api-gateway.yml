@@ -37,7 +37,6 @@ spring:
               uri: http://visits-service:8082
 eureka:
   client:
-    enabled: false
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
   instance:
