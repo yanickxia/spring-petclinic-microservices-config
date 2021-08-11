@@ -24,6 +24,17 @@ spring:
       on-profile: docker
   zipkin:
     baseUrl: http://tracing-server:9411
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            vets-service[0]:
+              uri: http://visits-service:8083
+            customers-service[0]:
+              uri: http://customers-service:8083
+            visits-service[0]:
+              uri: http://visits-service:8083
 eureka:
   client:
     enabled: false
@@ -31,6 +42,7 @@ eureka:
       defaultZone: http://discovery-server:8761/eureka/
   instance:
       prefer-ip-address: true
+
 ribbon:
   eureka:
    enabled: false
