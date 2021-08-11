@@ -32,9 +32,9 @@ spring:
             vets-service[0]:
               uri: http://visits-service:8083
             customers-service[0]:
-              uri: http://customers-service:8083
+              uri: http://customers-service:8081
             visits-service[0]:
-              uri: http://visits-service:8083
+              uri: http://visits-service:8082
 eureka:
   client:
     enabled: false
@@ -46,15 +46,3 @@ eureka:
 ribbon:
   eureka:
    enabled: false
-visits-service:
-  ribbon:
-    listOfServers: visits-service:8083
-customers-service:
-  ribbon:
-    listOfServers: customers-service:8083
-vets-service:
-  ribbon:
-    listOfServers: vets-service:8083
-api-gateway:
-  ribbon:
-    listOfServers: api-gateway:8080

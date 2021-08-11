@@ -18,10 +18,10 @@ ribbon:
    enabled: false
 visits-service:
   ribbon:
-    listOfServers: visits-service:8083
+    listOfServers: visits-service:8082
 customers-service:
   ribbon:
-    listOfServers: customers-service:8083
+    listOfServers: customers-service:8081
 vets-service:
   ribbon:
     listOfServers: vets-service:8083

@@ -24,15 +24,3 @@ eureka:
 ribbon:
   eureka:
    enabled: false
-visits-service:
-  ribbon:
-    listOfServers: visits-service:8083
-customers-service:
-  ribbon:
-    listOfServers: customers-service:8083
-vets-service:
-  ribbon:
-    listOfServers: vets-service:8083
-api-gateway:
-  ribbon:
-    listOfServers: api-gateway:8080
