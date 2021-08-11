@@ -20,7 +20,4 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
   instance:
-      prefer-ip-address: true
-ribbon:
-  eureka:
-   enabled: false
+      hostname: "tracing-server"
