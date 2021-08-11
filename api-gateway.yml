@@ -30,7 +30,7 @@ spring:
         simple:
           instances:
             vets-service[0]:
-              uri: http://visits-service:8083
+              uri: http://vets-service:8083
             customers-service[0]:
               uri: http://customers-service:8081
             visits-service[0]:
